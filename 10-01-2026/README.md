@@ -159,7 +159,9 @@ systemctl restart networking
 ```
 
 > Ganti `nic0` sesuai nama interface milikmu.
+
 > Ganti `vmbr0` sesuaikan
+
 
 ---
 
