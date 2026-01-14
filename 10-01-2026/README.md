@@ -127,8 +127,8 @@ Interface dengan status **UP** adalah yang sedang aktif.
 Jika kabel LAN dicabut lalu dipasang kembali, biasanya hasilnya menjadi:
 
 ```text
-nic0   -> [UP]
-vmbr0  -> [UP]
+nic0   -> [DOWN]
+vmbr0  -> [DOWN]
 wlp4s0 -> [DOWN]
 ```
 
@@ -146,8 +146,8 @@ Ini artinya:
 Biasanya bernama:
 
 ```text
-nic0   -> [UP]
-vmbr0  -> [UP]
+nic0   -> [DOWN]
+vmbr0  -> [DOWN]
 wlp4s0 -> [DOWN]
 ```
 
@@ -159,6 +159,7 @@ systemctl restart networking
 ```
 
 > Ganti `nic0` sesuai nama interface milikmu.
+> Ganti `vmbr0` sesuaikan
 
 ---
 
