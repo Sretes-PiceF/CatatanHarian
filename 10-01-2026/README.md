@@ -105,9 +105,9 @@ ip addr
 Contoh hasil normal:
 
 ```text
-nic0   -> <span style="background:#c8f7c5;padding:2px 6px;border-radius:4px;">UP</span>
-vmbr0  -> <span style="background:#c8f7c5;padding:2px 6px;border-radius:4px;">UP</span>
-wlp4s0 -> <span style="background:#f7c5c5;padding:2px 6px;border-radius:4px;">DOWN</span>
+nic0   -> [UP]
+vmbr0  -> [UP]
+wlp4s0 -> [DOWN]
 ```
 
 ### Cara Membacanya
@@ -115,8 +115,8 @@ wlp4s0 -> <span style="background:#f7c5c5;padding:2px 6px;border-radius:4px;">DO
 * Cari interface **LAN / Ethernet**
 * Perhatikan status:
 
-  * <span style="background:#c8f7c5;padding:2px 6px;border-radius:4px;font-weight:bold;">UP</span> → aktif / hidup
-  * <span style="background:#f7c5c5;padding:2px 6px;border-radius:4px;font-weight:bold;">DOWN</span> → mati / tidak terhubung
+  * 🟩 **UP** → aktif / hidup
+  * 🟥 **DOWN** → mati / tidak terhubung
 
 Interface dengan status **UP** adalah yang sedang aktif.
 
@@ -127,8 +127,9 @@ Interface dengan status **UP** adalah yang sedang aktif.
 Jika kabel LAN dicabut lalu dipasang kembali, biasanya hasilnya menjadi:
 
 ```text
-nic0   -> <span style="background:#f7c5c5;padding:2px 6px;border-radius:4px;">DOWN</span>
-vmbr0  -> <span style="background:#f7c5c5;padding:2px 6px;border-radius:4px;">DOWN</span>
+nic0   -> [UP]
+vmbr0  -> [UP]
+wlp4s0 -> [DOWN]
 ```
 
 Ini artinya:
@@ -145,10 +146,9 @@ Ini artinya:
 Biasanya bernama:
 
 ```text
-eno1
-enp3s0
-eth0
-nic0
+nic0   -> [UP]
+vmbr0  -> [UP]
+wlp4s0 -> [DOWN]
 ```
 
 ### b. Aktifkan Interface LAN
@@ -170,8 +170,8 @@ ip addr
 
 Target akhir:
 
-* Interface LAN → <span style="background:#c8f7c5;padding:2px 6px;border-radius:4px;font-weight:bold;">UP</span>
-* `vmbr0` → <span style="background:#c8f7c5;padding:2px 6px;border-radius:4px;font-weight:bold;">UP</span>
+* Interface LAN → 🟩 **UP**
+* `vmbr0` → 🟩 **UP**
 
 Jika **keduanya UP**, maka:
 
